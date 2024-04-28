@@ -1,0 +1,94 @@
+/* styles.css (or any other CSS file) */
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logout button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .logout button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form styles */
+  .form-container {
+    max-width: 400px;
+    margin:  auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type="tel"] {
+    padding: 5px;
+    margin: 5px;
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type="password"] {
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type="email"] {
+  padding: 5px;
+  margin: 5px;
+}
+  /* Responsiveness */
+  @media screen and (max-width: 700px) {
+    .logout {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .form-container {
+      padding: 20px 10px;
+    }
+  }
+  
+  /* Background image */
+  .create-user-page {
+    background-image: url('../../public/adminhomebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  

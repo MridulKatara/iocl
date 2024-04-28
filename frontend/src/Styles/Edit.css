@@ -1,0 +1,165 @@
+.user-detail-page {
+    background-image: url('../../public/adminhomebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logout button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logout button:hover {
+  text-decoration: underline;
+}
+
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.search-bar-input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.sidebar {
+  display:flex;
+  flex-direction: column;   
+  background: transparent;
+  padding: 10px;
+  width: 150px;
+  position: absolute;
+  top: 60px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  /* Pagination styles */
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li button {
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .pagination li button:hover {
+    background-color: #555;
+  }
+  
+  .pagination li.active button {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 760px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .logout button {
+      margin-top: 10px;
+    }
+  
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  
+    .content-container {
+      padding: 10px;
+    }
+  
+    input[type="text"] {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .navbar {
+      padding: 10px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input[type="text"] {
+      padding: 8px;
+    }
+  
+    .pagination li button {
+      padding: 3px 6px;
+    }
+  }
