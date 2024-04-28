@@ -1,10 +1,9 @@
 /* styles.css */
 
 /* Global styles */
-body {
+/* body {
     font-family: Arial, sans-serif;
-    background-image: url('../../public/adminhomebackground.jpg'); /* Replace 'background-image.jpg' with your image path */
-    background-size: cover;
+    background-image: url('../../public/adminhomebackground.jpg');
     background-position: center;
     margin: 0;
     padding: 0;
@@ -17,21 +16,21 @@ body {
 h2{
     color: #333;
 }
-.logo img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make the image round */
-    border: 2px solid #fff; /* Add a border around the image */
-  }
+.logo img { */
+    /* width: 150px; Adjust the width as needed */
+    /* height: auto; Maintain aspect ratio */
+    /* border-radius: 50%; Make the image round */
+    /* border: 2px solid #fff; Add a border around the image */
+  /* } */
   
-  .container {
+  /* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
-  
+   */
   /* Table styles */
-  table {
+  /* table {
     width: 90%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -52,10 +51,10 @@ h2{
   
   tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-  }
+  } */
   
   /* Form styles */
-  form {
+  /* form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -91,9 +90,9 @@ h2{
   input[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+   */
   /* Responsive styles */
-  @media only screen and (max-width: 768px) {
+  /* @media only screen and (max-width: 768px) {
     table {
       font-size: 14px;
     }
@@ -101,5 +100,66 @@ h2{
     th, td {
       padding: 8px;
     }
-  }
+  } */
   
+
+
+.form-Container{
+  margin: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.homeText,
+.homeSelect {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+}
+
+.homeSubmit-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.homeSubmit {
+  background-color: #051f62;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+  width: 50%;
+}
+
+.homeCheck{
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.homeSubmit:hover {
+  background-color: #023e8a;
+}

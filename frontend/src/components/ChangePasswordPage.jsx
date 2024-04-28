@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Styles/changePassword.css';
 
 const ChangePasswordPage = () => {
   const [formData, setFormData] = useState({
@@ -106,7 +107,10 @@ const ChangePasswordPage = () => {
         </div>
         {errorMessage && <div className="error-message">{errorMessage}</div>}
         {successMessage && <div className="success-message">{successMessage}</div>}
-        <button type="submit">Change Password</button>
+        <div className="button-container">
+          <button type="submit">Change Password</button>
+        </div>
+
       </form>
     </div>
   );

@@ -135,16 +135,19 @@ const Login = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="loginEmail"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="loginPassword"
         />
         <select
           value={role}
           onChange={(e) => setRole(e.target.value)}
+          className='loginSelect'
         >
           <option value="">Select Role</option>
           <option value="admin">Admin</option>

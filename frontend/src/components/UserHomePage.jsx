@@ -76,7 +76,7 @@ const WorkerHomePage = () => {
       </nav>
 
       {/* Form 1 */}
-<div>
+<div className='form-Container'>
   {/* Form 1 */}
 <div>
   <h1>Form 1</h1>
@@ -97,7 +97,7 @@ const WorkerHomePage = () => {
             <td>{heading || sampleName}</td>
             <td>
               {index === 0 ? (
-                <select value={shift} onChange={handleShiftChange}>
+                <select value={shift} onChange={handleShiftChange} className='homeSelect'>
                   <option value="">--Select Shift--</option>
                   <option value="Shift 1">Shift 1</option>
                   <option value="Shift 2">Shift 2</option>
@@ -109,6 +109,7 @@ const WorkerHomePage = () => {
                   value={form1Data[index - 1]}
                   onChange={(e) => handleForm1DataChange(index - 1, e.target.value)}
                   disabled={isDisabled}
+                  className='homeText'
                 />
               )}
             </td>
@@ -125,12 +126,14 @@ const WorkerHomePage = () => {
 
       {/* Checkbox */}
       <label>
-        <input type="checkbox" checked={confirmChecked} onChange={handleCheckboxChange} />
+        <input type="checkbox" checked={confirmChecked} onChange={handleCheckboxChange} className='homeCheck'/>
         Confirm submission
       </label>
 
       {/* Submit Button */}
-      <button onClick={handleSubmit}>Submit</button>
+      <div className="homeSubmit-container">
+  <button className="homeSubmit" onClick={handleSubmit}>Submit</button>
+</div>
     </div>
   );
 };

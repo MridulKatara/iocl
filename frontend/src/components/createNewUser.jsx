@@ -64,24 +64,24 @@ const CreateUserPage = () => {
         <h2>Create New User</h2>
         <form onSubmit={handleSubmit}>
           {/* Form fields */}
-          <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} required />
-          <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
+          <input type="text" name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} required className="createText"/>
+          <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required  className="createEmail"/>
           <input type="tel" name="mobileNumber" placeholder="Mobile Number" value={formData.mobileNumber} onChange={handleChange} required />
-          <input type="text" name="position" placeholder="Position" value={formData.position} onChange={handleChange} required />
-          <select name="role" value={formData.role} onChange={handleChange} required>
+          <input type="text" name="position" placeholder="Position" value={formData.position} onChange={handleChange} required className="createText"/>
+          <select name="role" value={formData.role} onChange={handleChange} required className='createSelect'>
             <option value="">Select Role</option>
             <option value="worker">Worker</option>
             <option value="admin">Admin</option>
           </select>
-          <input type="text" name="residentialAddress" placeholder="Residential Address" value={formData.residentialAddress} onChange={handleChange} required />
-          <select name="gender" value={formData.gender} onChange={handleChange} required>
+          <input type="text" name="residentialAddress" placeholder="Residential Address" value={formData.residentialAddress} onChange={handleChange} required className="createText"/>
+          <select name="gender" value={formData.gender} onChange={handleChange} required className='createSelect'>
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
-          <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
-          <input type="password" name="confirmPassword" placeholder="Confirm Password" value={formData.confirmPassword} onChange={handleChange} required />
-          <button type="submit">Submit</button>
+          <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required className='createPassword' />
+          <input type="password" name="confirmPassword" placeholder="Confirm Password" value={formData.confirmPassword} onChange={handleChange} required className='createPassword' />
+          <button type="submit" className='createSubmit'>Submit</button>
         </form>
       </div>
     </div>
