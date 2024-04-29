@@ -74,7 +74,7 @@ const UserDetailPage = () => {
 
       {/* Sidebar */}
       <div className='main'>
-      <div className="sidebar">
+      <div className="editSidebar">
         <h2>Filters</h2>
         <div className="filters">
           <label>

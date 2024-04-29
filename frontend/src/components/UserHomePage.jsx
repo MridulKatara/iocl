@@ -146,10 +146,13 @@ const WorkerHomePage = () => {
           type="checkbox"
           checked={confirmChecked}
           onChange={handleCheckboxChange}
+          className="homeCheck"
         />
         Confirm submission
       </label>
-      <button onClick={handleSubmit}>Submit</button>
+      <div className="homeSubmit-container">
+  <button className="homeSubmit" onClick={handleSubmit}>Submit</button>
+</div>
     </div>
   );
 };

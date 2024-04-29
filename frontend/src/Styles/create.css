@@ -1,7 +1,7 @@
 /* styles.css (or any other CSS file) */
 
 /* Navbar styles */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,9 +25,9 @@
   .logout button:hover {
     text-decoration: underline;
   }
-  
+   */
   /* Form styles */
-  .form-container {
+  /* .form-container {
     max-width: 400px;
     margin:  auto;
     padding: 20px;
@@ -71,9 +71,9 @@ button {
 input[type="email"] {
   padding: 5px;
   margin: 5px;
-}
+} */
   /* Responsiveness */
-  @media screen and (max-width: 700px) {
+  /* @media screen and (max-width: 700px) {
     .logout {
       display: flex;
       justify-content: flex-end;
@@ -83,12 +83,87 @@ input[type="email"] {
       padding: 20px 10px;
     }
   }
-  
+   */
   /* Background image */
-  .create-user-page {
-    background-image: url('../../public/adminhomebackground.jpg');
-    background-size: cover;
+  /* .create-user-page { */
+    /* background-image: url('../../public/adminhomebackground.jpg'); */
+    /* background-size: cover;
     background-position: center;
     min-height: 100vh;
-  }
+  } */
   
+
+
+
+
+
+
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logout button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+.logout button:hover {
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  width: 400px;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 24px;
+  color: #051f62;
+  margin-bottom: 20px;
+}
+
+.createText,
+.createEmail,
+input[type='tel'],
+.createPassword,
+.createSelect{
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.createSubmit {
+  width: 100%;
+  padding: 10px;
+  background-color: #051f62;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createSubmit:hover {
+  background-color: #023e8a;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}

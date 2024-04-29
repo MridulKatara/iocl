@@ -1,4 +1,4 @@
-/* styles.css (or any other CSS file) */
+/* 
 .login-container {
     display: flex;
     flex-direction: column;
@@ -59,4 +59,108 @@
   .login-form button:hover {
     background-color: #0056b3;
   }
-  
+   
+*/
+
+
+
+
+
+
+
+
+
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../public/loginbackground.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginEmail,
+.loginPassword  {
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  background: transparent;
+  font-size: 15px;
+  color: grey;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.loginSelect {
+  width: 350px; 
+  border: 1px solid #ccc;
+  height: 40px;
+  background: transparent;
+  font-size: 15px;
+  color: grey;
+  padding-left: 8px;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: #051f62;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  border: 0px;
+  margin-top: 10px;
+}
+
+.login-form button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+} 
+
+/* Responsive Styles */
+@media screen and (max-width: 500px) {
+  .loginEmail,
+.loginPassword,
+.loginSelect {
+    width: 100%; 
+    max-width: 350px;
+    height: 35px;
+  }
+
+  .login-form button {
+    width: 100%;
+    max-width: 350px; 
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .loginEmail,
+  .loginPassword,
+  .loginSelect {
+    width: 100%; 
+    max-width: 150px;
+    height: 30px;
+  }
+
+  .login-form button {
+    width: 100%;
+    max-width: 150px; 
+    height: 30px;
+  }
+}
