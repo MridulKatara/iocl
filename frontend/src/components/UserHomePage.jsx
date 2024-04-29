@@ -46,6 +46,7 @@ const WorkerHomePage = () => {
       setConfirmChecked(false);
 
       // Use a timeout to delay the refresh, ensuring state updates have been processed
+
       setTimeout(() => {
         window.location.reload();
       }, 500); // 500 milliseconds delay
